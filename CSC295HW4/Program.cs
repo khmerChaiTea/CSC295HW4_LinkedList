@@ -1,30 +1,22 @@
-﻿using CSC295HW4.LinkedList;
+﻿// Linked List
+using CSC295HW4.LinkedList;
 
-namespace CSC295HW4
+class Program
 {
-    internal class Program
+    static void Main()
     {
-        // Linked List
-        static void Main(string[] args)
-        {
-            Node nodeA = new Node();
-            nodeA.Data = 165;
+        LinkedList linkedList = new LinkedList();
+        linkedList.InsertFirst(1);
+        linkedList.InsertFirst(2);
+        linkedList.InsertFirst(3);
+        linkedList.InsertFirst(4);
 
-            Node nodeB = new Node();
-            nodeB.Data = 435;
+        linkedList.DeleteFirst(1);
+        linkedList.DeleteFirst(2);
 
-            Node nodeC = new Node();
-            nodeC.Data = 196;
+        linkedList.InsertLast(926);
+        linkedList.InsertLast(348);
 
-            Node nodeD = new Node();
-            nodeD.Data = 951;
-
-            // Make the arrow point to the next node
-            // A linked list is an objectified array
-            nodeA.Next = nodeB;
-            nodeB.Next = nodeC;
-            nodeC.Next = nodeD;
-        }
+        linkedList.DisplayList();
     }
-
 }

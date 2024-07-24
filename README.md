@@ -7,14 +7,14 @@ Structure and Components of a Linked List
   •	Node Structure: Each node in a linked list contains:
   
     o	Data: Holds the actual value or payload.
-    o	Pointer (Next): References the next node in the sequence. The last node's pointer is null, indicating the end of the         list.
+    o	Pointer (Next): References the next node in the sequence. The last node's pointer is null, indicating the end of the list.
     
 
 Differences Between Linked Lists and Arrays
 
   •	Insertions and Deletions:
   
-    o	Linked List: O(1) for operations at the beginning or end of the list, or with direct node references. This contrasts         with arrays, where such operations can be O(n) due to shifting elements.
+    o	Linked List: O(1) for operations at the beginning or end of the list, or with direct node references. This contrasts with arrays, where such operations can be O(n) due to shifting elements.
     
   •	Access Time:
   
@@ -35,14 +35,14 @@ Implementing a linked list in C# involves managing pointers correctly for:
   
   •	Memory Management: Handling node creation and deletion efficiently to avoid memory leaks or fragmentation.
   
-  •	Edge Cases: Addressing scenarios like inserting or deleting nodes at the beginning or end of the list, ensuring              operations remain efficient.
+  •	Edge Cases: Addressing scenarios like inserting or deleting nodes at the beginning or end of the list, ensuring operations remain efficient.
   
   
 Future Use of Linked Lists in Programming Projects
 
 Linked lists are versatile and suitable for:
 
-  •	Dynamic Data Structures: Useful in scenarios requiring frequent data modifications, such as managing an online shopping      cart or a library database.
+  •	Dynamic Data Structures: Useful in scenarios requiring frequent data modifications, such as managing an online shopping cart or a library database.
   
   •	Specialized Algorithms: Implementing algorithms where dynamic data insertion and deletion are core operations.
   
@@ -53,9 +53,9 @@ Example Scenario
 
 For instance, in developing a scheduling application:
 
-  •	Task Management: Utilize a linked list to manage tasks dynamically. New tasks can be added, completed tasks removed, and     task priorities adjusted efficiently.
+  •	Task Management: Utilize a linked list to manage tasks dynamically. New tasks can be added, completed tasks removed, and task priorities adjusted efficiently.
   
-  •	Real-Time Updates: Linked lists facilitate real-time updates without the overhead of resizing or reorganizing fixed-size     arrays.
+  •	Real-Time Updates: Linked lists facilitate real-time updates without the overhead of resizing or reorganizing fixed-size arrays.
 
   
 By leveraging these characteristics, linked lists offer a powerful tool for programmers needing flexible and efficient data management solutions, particularly in scenarios demanding dynamic and scalable operations.

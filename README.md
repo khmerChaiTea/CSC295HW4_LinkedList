@@ -1,4 +1,4 @@
-CSC 295: algorithms and Data Structure  HomeWork #4
+CSC 295: Algorithms and Data Structure  HomeWork #4
 
 A linked list in C# is like an "objectified" version of an array, offering dynamic and efficient ways to manage data. Unlike arrays that are fixed in size and costly to modify, linked lists allow elements to be inserted or deleted anywhere with ease.
 

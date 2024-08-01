@@ -5,7 +5,7 @@ class Program
 {
     static void Main()
     {
-        LinkedList linkedList = new LinkedList();
+        DoublyLinkedList linkedList = new DoublyLinkedList();
         linkedList.InsertFirst(1);
         linkedList.InsertFirst(2);
         linkedList.InsertFirst(3);

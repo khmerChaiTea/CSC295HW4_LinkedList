@@ -9,6 +9,7 @@ namespace CSC295HW4.LinkedList
     public class LinkedList
     {
         public Node? First { get; set; }
+        public Node? Last { get; set; }
 
         public void InsertFirst(int data)
         {
@@ -23,12 +24,15 @@ namespace CSC295HW4.LinkedList
 
             // Make the first the new node
             First = newNode;
+
+            if (First.Next == null) Last = newNode;
         }
 
         public Node DeleteFirst()
         {
             if (First == null)
             {
+                Last = null;
                 throw new InvalidOperationException("Cannot delete from an empty list.");
             }
             Node temp = First;
@@ -52,22 +56,20 @@ namespace CSC295HW4.LinkedList
             Node newNode = new Node();
             newNode.Data = data;
 
-            if (First == null)
-            {
-                // If the list is empty, set the new node as the first node
-                First = newNode;
-            }
-            else
-            {
-                Node current = First;
-                while (current.Next != null)
-                {
-                    current = current.Next;
-                }
-                // At this point, current is the last node in the list
-                current.Next = newNode;
-            }
-        }
+			if (First == null)
+			{
+				// If the list is empty, set the new node as the first node
+				First = newNode;
+				Last = newNode; // Set the Last pointer
+			}
+			else
+			{
+				Node currentLastNode = Last;
+				// If the list is not empty, append the new node at the end
+				currentLastNode.Next = newNode; // Last points to the new node
+				Last = newNode; // Update Last to be the new node
+			}
+		}
 
     }
 }

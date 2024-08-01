@@ -25,7 +25,7 @@ namespace CSC295HW4.LinkedList
             First = newNode;
         }
 
-        public Node DeleteFirst(int data)
+        public Node DeleteFirst()
         {
             if (First == null)
             {

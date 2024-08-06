@@ -22,12 +22,9 @@ namespace CSC295HW4.LinkedList
             return _stack.DeleteFirst().Data;
         }
 
-        public int Peek()
+        public int? Peek()
         {
-            if (_stack.First == null)
-            {
-                throw new InvalidOperationException("The stack is empty.");
-            }
+            if (_stack.First == null) return null;
 
             return _stack.First.Data;
         }

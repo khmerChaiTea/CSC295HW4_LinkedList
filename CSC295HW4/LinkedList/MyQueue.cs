@@ -1,35 +1,35 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Channels;
 using System.Threading.Tasks;
 
 namespace CSC295HW4.LinkedList
 {
-    public class MyStack
+    public class MyQueue
     {
-        private LinkedList _stack = new LinkedList();
+        private LinkedList queue = new LinkedList();
 
-        public LinkedList Stack { get { return _stack; } }
-
-        public void Push(int value)
+        public void Enqueue(int data)
         {
-            _stack.InsertFirst(value);
+            queue.InsertLast(data);
         }
 
-        public int Pop()
+        public void Dequeue()
         {
-            return _stack.DeleteFirst().Data;
+            queue.DeleteFirst();
         }
 
         public int Peek()
         {
-            if (_stack.First == null)
+            if (queue.First == null)
             {
                 throw new InvalidOperationException("The stack is empty.");
             }
 
-            return _stack.First.Data;
+            return queue.First.Data;
         }
     }
 }

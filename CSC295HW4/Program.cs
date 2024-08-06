@@ -18,5 +18,12 @@ class Program
         linkedList.InsertLast(348);
 
         linkedList.DisplayList();
+
+        MyStack stack = new MyStack();
+        stack.Push(1);
+        stack.Push(2);
+        Console.WriteLine("Should return 2 " + stack.Peek());
+        stack.Pop();
+        Console.WriteLine("Should return 1 " + stack.Peek());
     }
 }
